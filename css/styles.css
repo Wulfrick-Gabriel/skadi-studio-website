@@ -598,6 +598,22 @@ textarea {
   font-size: 0.95rem;
 }
 
+/* Cyber Design */
+
+.cyber-design .section-head {
+  margin-bottom: 1.25rem;
+}
+
+.cyber-design-copy {
+  max-width: 42rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cyber-design-copy .section-copy {
+  margin: 0;
+}
+
 /* Projects + vertical gallery */
 
 .project-layout {
