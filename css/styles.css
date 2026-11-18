@@ -633,6 +633,102 @@ textarea {
   border: 0;
 }
 
+/* Memory X */
+
+.memory-x .section-head {
+  margin-bottom: 1.25rem;
+}
+
+.memory-x-copy {
+  max-width: 42rem;
+}
+
+.memory-x-copy .section-copy {
+  margin: 0;
+}
+
+.download-panel {
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+  max-width: 52rem;
+}
+
+.download-panel__label {
+  margin: 0 0 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ice);
+}
+
+.download-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 720px) {
+  .download-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-card:hover,
+.download-card:focus-visible {
+  border-color: var(--ice);
+  box-shadow: 0 10px 28px rgba(16, 22, 29, 0.08);
+  transform: translateY(-1px);
+}
+
+.download-card__ext {
+  flex: 0 0 auto;
+  min-width: 3.1rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 0.25rem;
+  background: #132028;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.download-card__meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.download-card__meta strong {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.download-card__meta small {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.download-card__action {
+  flex: 0 0 auto;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ice-deep);
+}
+
 /* Projects + vertical gallery */
 
 .project-layout {
