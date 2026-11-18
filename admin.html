@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Admin — Skadi Studio</title>
+  <link rel="icon" href="assets/logo-principal-branco.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-admin">
+  <header class="admin-top">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-horizontal-preto.svg" alt="Skadi Studio" width="220" height="31" />
+    </a>
+    <div class="admin-top-actions">
+      <span data-admin-email></span>
+      <a class="btn btn-ghost-dark" href="index.html">Ver site</a>
+      <button class="btn btn-primary" type="button" data-logout>Sair</button>
+    </div>
+  </header>
+
+  <main class="admin-shell admin-shell--wide">
+    <h1>Painel de conteúdo</h1>
+    <p class="admin-lead">Edite textos e faça upload das imagens de Projetos e Quem somos.</p>
+    <p class="form-status" data-admin-status role="status" aria-live="polite"></p>
+
+    <section class="admin-panel" data-section="projetos">
+      <h2>Projetos</h2>
+      <form class="admin-form" data-section-form="projetos">
+        <div class="field">
+          <label for="projetos-title">Título</label>
+          <input id="projetos-title" name="title" type="text" required />
+        </div>
+        <div class="field">
+          <label for="projetos-body">Texto breve</label>
+          <textarea id="projetos-body" name="body" rows="5" required></textarea>
+        </div>
+        <div class="admin-grid-3">
+          <div class="field">
+            <label for="projetos-name">Nome do projeto</label>
+            <input id="projetos-name" name="project_name" type="text" />
+          </div>
+          <div class="field">
+            <label for="projetos-type">Tipo</label>
+            <input id="projetos-type" name="project_type" type="text" />
+          </div>
+          <div class="field">
+            <label for="projetos-status">Status</label>
+            <input id="projetos-status" name="project_status" type="text" />
+          </div>
+        </div>
+
+        <div class="admin-images" data-images="projetos"></div>
+        <button class="btn btn-primary" type="submit">Salvar Projetos</button>
+      </form>
+    </section>
+
+    <section class="admin-panel" data-section="quem_somos">
+      <h2>Quem somos</h2>
+      <form class="admin-form" data-section-form="quem_somos">
+        <div class="field">
+          <label for="quem-title">Título</label>
+          <input id="quem-title" name="title" type="text" required />
+        </div>
+        <div class="field">
+          <label for="quem-body">Descrição</label>
+          <textarea id="quem-body" name="body" rows="5" required></textarea>
+        </div>
+        <div class="field">
+          <label for="quem-note">Nota</label>
+          <input id="quem-note" name="note" type="text" />
+        </div>
+
+        <div class="admin-images" data-images="quem_somos"></div>
+        <button class="btn btn-primary" type="submit">Salvar Quem somos</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabase-client.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

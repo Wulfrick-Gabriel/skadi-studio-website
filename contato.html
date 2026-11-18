@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fale com a Skadi Studio — desenvolvimento de games e conteúdo em vídeo." />
+  <title>Fale conosco — Skadi Studio</title>
+  <link rel="icon" href="assets/logo-principal-branco.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-contact">
+  <a class="skip-link" href="#conteudo">Ir ao conteúdo</a>
+
+  <header class="site-header is-solid" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Skadi Studio — início">
+        <img class="brand-mark brand-mark--white" src="assets/logo-horizontal-branco.svg" alt="Skadi Studio" width="320" height="45" />
+        <img class="brand-mark brand-mark--black" src="assets/logo-horizontal-preto.svg" alt="" width="320" height="45" aria-hidden="true" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#quem-somos">Quem somos</a>
+        <a class="nav-cta" href="contato.html" aria-current="page">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="contact-hero">
+      <div class="shell contact-layout">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Contato</p>
+          <h1>Fale conosco</h1>
+          <p class="lede">
+            Descreva o projeto, o prazo e o que você já tem em mãos. Retornamos com uma leitura objetiva do próximo passo.
+          </p>
+
+          <dl class="contact-details">
+            <div>
+              <dt>E-mail</dt>
+              <dd><a href="mailto:contato@skadistudio.com">contato@skadistudio.com</a></dd>
+            </div>
+            <div>
+              <dt>Resposta</dt>
+              <dd>Em até 2 dias úteis</dd>
+            </div>
+            <div>
+              <dt>Foco</dt>
+              <dd>Games · Vídeo · Produção</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome" />
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@empresa.com" />
+          </div>
+
+          <div class="field">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="games">Desenvolvimento de games</option>
+              <option value="video">Conteúdo em vídeo</option>
+              <option value="producao">Direção de produção</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Contexto, prazo e objetivo do projeto"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/logo-horizontal-branco.svg" alt="Skadi Studio" width="280" height="39" />
+        <p>Games · Vídeo · Produção</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="mailto:contato@skadistudio.com">contato@skadistudio.com</a>
+      </div>
+      <p class="footer-copy">© <span data-year></span> Skadi Studio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
